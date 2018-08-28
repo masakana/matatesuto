@@ -19,4 +19,9 @@ from
 products;
 /*‰‰ŽZ‰Â”\*/
 
-
+use mydb;
+select 
+name as –¼‘O,
+price as ‰¿Ši
+from 
+products where price >=9800;
