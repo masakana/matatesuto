@@ -5,5 +5,18 @@ select * from products;
 
 select id, last_name from users;
 
+use mydb;
+select name as –¼‘O,price as ‰¿Ši  from products;
+
+/* as‚ÍÈ—ª‰Â*/
+
+use mydb;
+select 
+name as –¼‘O,
+price as ‰¿Ši ,
+price *1.08 as Å‰¿Ši 
+from 
+products;
+/*‰‰Z‰Â”\*/
 
 
