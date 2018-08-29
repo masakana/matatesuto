@@ -44,3 +44,9 @@ select * from products where price >= 800 and price <=1800;
 /*スペースも正確に打つこと。動いてはくれるけど後でものすごく読みづらい。*/
 
 select * from products where price = 800 or price =1200;
+
+select * from users where last_name like '中%';
+/*likeは～含む。「%は半角」*/
+
+select * from users where first_name like '__子';
+/*２文字空きも可*/
