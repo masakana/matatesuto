@@ -25,3 +25,22 @@ name as 名前,
 price as 価格
 from 
 products where price >=9800;
+
+select * from products where name='商品0003';
+select * from products where price > 1000;
+select * from products where price <> 1000;
+select * from products where price != 1000;
+/*30行目と３１行目は同じ*/
+
+select * from products where id in (1,2,3);
+select * from products where id not in (1,2,3);
+
+select * from products where price is not null;
+select * from products where price is null;
+
+select * from products where price between 800 and 1500;
+select * from products where price >= 800 and price <=1800;
+/*この２行も同じ意味。いろんなやり方がある。*/
+/*スペースも正確に打つこと。動いてはくれるけど後でものすごく読みづらい。*/
+
+select * from products where price = 800 or price =1200;
