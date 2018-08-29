@@ -50,3 +50,7 @@ select * from users where last_name like '中%';
 
 select * from users where first_name like '__子';
 /*２文字空きも可*/
+
+select * from products limit 10;
+/*実務では limit1000 あたりがベター。あんまりにも多いと止まる。*/
+
