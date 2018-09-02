@@ -87,3 +87,28 @@ select * from products order by price asc;
 select* products order by price desc,id asc;
 
 /*複数並び替えるときは,をつける*/
+
+/*演算子は割愛 電卓いらないね　ただ、nullを含むとすべてnull*/
+
+select abs(10)
+
+/*絶対値*/
+
+select id ,name,round(price * 1.08, 0) 
+
+/*1,08,0 四捨五入。この場合第1位で四捨五入*/
+
+select concat (last_name,' ',first_name,'さん') from users;
+
+/*concat文字列連結*/
+
+select current_date();
+select current_timestamp();
+select current_date() + interval 3 day;
+
+(-を付けたら３日前という意味。hourに変えると時間*/
+
+select*from orders where extract(year_month from order_time)=201701;
+
+/*2017 1月の注文の記録*/
+

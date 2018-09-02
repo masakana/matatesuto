@@ -1,2 +1,9 @@
-katakata
-kokoto
+use mydb;
+select * from products;
+
+/*‚±‚ÌƒRƒƒ“ƒg‚Í–³Œø‚Å‚·*/
+
+select id, last_name from users;
+
+
+
