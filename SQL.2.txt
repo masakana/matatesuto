@@ -77,3 +77,13 @@ select
 having
 order by
 limit
+
+/*asc=¸‡@desc=~‡*/
+
+select * from products order by price asc;
+
+/*asc‚ÍÈ—ª‰Â”\*/
+
+select* products order by price desc,id asc;
+
+/*•¡”•À‚Ñ‘Ö‚¦‚é‚Æ‚«‚Í,‚ğ‚Â‚¯‚é*/
