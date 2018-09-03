@@ -1,0 +1,26 @@
+/*ビューって目だけのあのモンスター・・・*/
+create view prefecture_user_counts(name, count)
+select
+ p.name name,
+ count(*) count
+from
+ users u
+inner join
+ prefectures p
+ on u.prefecture_id = p.id
+group by
+ u.prefecture_id;
+
+/*で作成し*/
+
+SELECT
+ name,
+ count
+from
+ prefecture_user_counts;
+
+/*のちに*/
+
+drop view prefecture_user_counts;
+
+/*で削除*/
