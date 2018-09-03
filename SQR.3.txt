@@ -66,4 +66,41 @@ order by u.id;
 /*nullnull どうかした？*/
 /*テーブルは複数結合可能*/
 
- 
+select
+ email,
+ last_name,
+ first_name,
+ gender
+from
+ users
+union
+select
+ email,
+ last_name,
+ first_name,
+ gender
+from
+ admin_users;
+
+ /*order by だけは全体として最後の一つのみ*/
+
+select
+ email,
+ last_name,
+ first_name,
+ gender
+from
+ users
+where
+ gender =1
+union all
+select
+ email,
+ last_name,
+ first_name,
+ gender
+from
+ admin_users
+where
+ gender = 2 
+order by gender;
