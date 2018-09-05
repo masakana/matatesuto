@@ -98,3 +98,41 @@ group by
 order by
  prefecture_id,order_year_month
 ;
+
+/*新規行追加*/
+
+insert into products(name,price)values ('新商品A',1000);
+
+insert product values (1002,'新商品B',2000);
+/*全て指定すれば省略可＊/
+
+insert into products(name,prce)
+values
+('新商品C',3000),
+('新商品D',4000),
+('新商品E',5000);
+
+update products set price=price*0.9;
+/*データの更新*/
+
+update products set name ='SQL入門'where id =3;
+
+update
+ prodcts
+set
+ price=price*1.05
+where
+ id in
+ (
+ select
+  product_id
+ from
+ order_details
+ group by
+  product_id
+ having
+ sum(product_qsty)>=10
+);
+
+/*行の削除*/
+delete from products_categories;
