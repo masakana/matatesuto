@@ -1,0 +1,10 @@
+alter table books change price unit_price int;
+
+alter table books drop unit_price;
+/*íœ*/
+
+drop table books;
+/*íœ*/
+
+drop database book_store;
+/*íœ*/
