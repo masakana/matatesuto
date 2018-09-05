@@ -136,3 +136,18 @@ where
 
 /*行の削除*/
 delete from products_categories;
+
+delete from products where id =1001;
+
+
+/*データベースの追加*/
+
+create datebase book_store;
+
+/*テーブルの追加*/
+
+use book_store;
+
+create table books(id int not null auto_increment primary key,title varchar(255) not null);
+
+-int
